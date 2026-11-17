@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "@3pino/app-kit-web": "git+https://github.com/3pino/app-kit-web.git#v0.1.1",
-    "@3pino/design-system": "file:../design-system",
-    "@3pino/ui-kit-web": "file:../ui-kit-web",
+    "@3pino/design-system": "git+https://github.com/3pino/design-system.git#v0.4.1",
+    "@3pino/ui-kit-web": "git+https://github.com/3pino/ui-kit-web.git#v0.3.0",
     "@lucide/svelte": "^1.53.0",
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "@tsconfig/svelte": "^5.0.8",
