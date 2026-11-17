@@ -1,0 +1,46 @@
+{
+  "name": "@3pino/viewer-kit-web",
+  "version": "0.1.0",
+  "description": "3pino のアプリの拡大表示（写真・PDF・ライブ映像の全画面）の部品。ファイルの種類ごとのビューアーと、前後の移動・スワイプ・ダウンロードの口",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./viewers": { "types": "./src/viewers/index.ts", "svelte": "./src/viewers/index.ts", "default": "./src/viewers/index.ts" },
+    "./viewers/types": { "types": "./src/viewers/types.ts", "default": "./src/viewers/types.ts" },
+    "./viewers/*.svelte": { "svelte": "./src/viewers/*.svelte", "default": "./src/viewers/*.svelte" },
+    "./viewers/*": { "types": "./src/viewers/*.ts", "default": "./src/viewers/*.ts" },
+    "./package.json": "./package.json"
+  },
+  "files": ["src", "docs", "!src/**/*.test.ts", "!src/test-support", "README.md", "LICENSE"],
+  "scripts": {
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@3pino/app-kit-web": ">=0.1.0",
+    "@3pino/design-system": ">=0.4.1",
+    "@3pino/ui-kit-web": ">=0.3.0",
+    "@lucide/svelte": "^1.53.0",
+    "pdfjs-dist": "^4.10.38",
+    "svelte": "^5.57.0"
+  },
+  "peerDependenciesMeta": {
+    "pdfjs-dist": { "optional": true }
+  },
+  "devDependencies": {
+    "@3pino/app-kit-web": "file:../app-kit-web",
+    "@3pino/design-system": "file:../design-system",
+    "@3pino/ui-kit-web": "file:../ui-kit-web",
+    "@lucide/svelte": "^1.53.0",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@tsconfig/svelte": "^5.0.8",
+    "@types/node": "^26.6.4",
+    "jsdom": "^29.1.1",
+    "pdfjs-dist": "4.10.38",
+    "svelte": "^5.57.2",
+    "svelte-check": "^4.7.6",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3"
+  }
+}
