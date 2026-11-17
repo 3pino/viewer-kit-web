@@ -28,7 +28,7 @@
     "pdfjs-dist": { "optional": true }
   },
   "devDependencies": {
-    "@3pino/app-kit-web": "file:../app-kit-web",
+    "@3pino/app-kit-web": "git+https://github.com/3pino/app-kit-web.git#v0.1.1",
     "@3pino/design-system": "file:../design-system",
     "@3pino/ui-kit-web": "file:../ui-kit-web",
     "@lucide/svelte": "^1.53.0",
